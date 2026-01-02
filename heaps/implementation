@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+class heap{
+    public:
+    int capacity;
+    int size;
+    int* arr;
+    heap(int c){
+        this->capacity=c;
+        this->size=0;
+        arr=new int[c];
+    }
+    int parent(int i){
+        return (i-1)/2;
+    }
+    int left(int i){
+        return 2*i+1;
+    }
+    int right(int i){
+        return 2*i+2;
+    }
+    void insert(int val){
+        if(size==capacity){
+            cout<<"heap bhar chuka hai"<<endl;return;
+        }
+        arr[size]=val;
+        int k=size;
+        size++;
+        while(k!=0 && arr[parent(k)]<arr[k])
+    }
+}

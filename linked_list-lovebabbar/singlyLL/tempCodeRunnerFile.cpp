@@ -1,0 +1,1 @@
+insertAthead(5,head,tail);
